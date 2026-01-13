@@ -7,7 +7,7 @@
         <OutputPath>$(PackageDirectory)</OutputPath>
     </PropertyGroup>
     <ItemGroup>
-        <ProjectReference Include="../UnityEngine/UnityEngine.csproj" />
+        <ProjectReference Include="../UnityEngine/UnityEngine.csproj"  Private="False" />
     </ItemGroup>
 	<ItemGroup>
 		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
