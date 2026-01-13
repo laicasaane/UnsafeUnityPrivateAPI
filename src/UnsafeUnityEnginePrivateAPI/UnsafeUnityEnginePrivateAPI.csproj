@@ -1,0 +1,341 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <RootNamespace>UnsafeUnityEnginePrivateAPI</RootNamespace>
+        <DebugType>embedded</DebugType>
+        <OutputPath>$(PackageDirectory)</OutputPath>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="../UnityEngine/UnityEngine.csproj" />
+    </ItemGroup>
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.AccessibilityModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.AdaptivePerformanceModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.AIModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.AMDModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.AndroidJNIModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.AnimationModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.ARModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.AssetBundleModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.AudioModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.ClothModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.ClusterInputModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.ClusterRendererModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.ContentLoadModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.CoreModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.CrashReportingModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.DirectorModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.DSPGraphModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.GameCenterModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.GIModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.GraphicsStateCollectionSerializerModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.GridModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.HierarchyCoreModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.HierarchyModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.HotReloadModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.IdentifiersModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.ImageConversionModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.IMGUIModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.InputForUIModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.InputLegacyModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.InputModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.InsightsModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.JSONSerializeModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.LocalizationModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.MarshallingModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.MultiplayerModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.NVIDIAModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.ParticleSystemModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.PerformanceReportingModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.Physics2DModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.PhysicsBackendPhysXModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.PhysicsModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.PropertiesModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.RenderAs2DModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.ScreenCaptureModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.ScriptingModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.ShaderVariantAnalyticsModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.SharedInternalsModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.SpriteMaskModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.SpriteShapeModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.StreamingModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.SubstanceModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.SubsystemsModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.TerrainModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.TerrainPhysicsModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.TextCoreFontEngineModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.TextCoreTextEngineModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.TextRenderingModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.TilemapModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.TLSModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.UIElementsModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.UIModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.UmbraModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.UnityAnalyticsCommonModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.UnityAnalyticsModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.UnityConnectModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.UnityConsentModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.UnityCurlModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.UnityWebRequestAssetBundleModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.UnityWebRequestAudioModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.UnityWebRequestModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.UnityWebRequestTextureModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.UnityWebRequestWWWModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.VectorGraphicsModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.VehiclesModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.VFXModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.VideoModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.VirtualTexturingModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.VRModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.WindModule</_Parameter1>
+		</AssemblyAttribute>
+
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.IgnoresAccessChecksToAttribute">
+			<_Parameter1>UnityEngine.XRModule</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
+</Project>

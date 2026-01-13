@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UnsafeUnityEnginePrivateAPI</name>
+    </assembly>
+    <members>
+        <member name="T:PrivateAPIBridge.UnsafeGridHandle">
+            <summary>
+            A struct providing unsafe access to <see cref="T:UnityEngine.Grid"/>.
+            </summary>
+        </member>
+        <member name="P:PrivateAPIBridge.UnsafeGridHandle.cellSize">
+            <summary>
+            The size of each cell in the Grid.
+            </summary>
+        </member>
+        <member name="P:PrivateAPIBridge.UnsafeGridHandle.cellGap">
+            <summary>
+            The size of the gap between each cell in the Grid.
+            </summary>
+        </member>
+        <member name="P:PrivateAPIBridge.UnsafeGridHandle.cellLayout">
+            <summary>
+            The layout of the cells in the Grid.
+            </summary>
+        </member>
+        <member name="P:PrivateAPIBridge.UnsafeGridHandle.cellSwizzle">
+            <summary>
+            The cell swizzle for the Grid.
+            </summary>
+        </member>
+        <member name="M:PrivateAPIBridge.UnsafeGridHandle.CreateFrom(UnityEngine.Grid)">
+            <summary>
+            Creates an <see cref="T:PrivateAPIBridge.UnsafeGridHandle"/> from a <see cref="T:UnityEngine.Grid"/>.
+            </summary>
+            <param name="grid">The grid to create the handle from.</param>
+            <returns>A new <see cref="T:PrivateAPIBridge.UnsafeGridHandle"/>.</returns>
+            <exception cref="T:System.NullReferenceException">Thrown when the grid is null or invalid.</exception>
+        </member>
+        <member name="M:PrivateAPIBridge.UnsafeGridHandle.GetBoundsLocal(UnityEngine.Vector3Int)">
+            <summary>
+            Returns the local bounds for a cell at the location.
+            </summary>
+            <param name="cellPosition">Location of the cell.</param>
+            <returns>Local bounds of cell at the location.</returns>
+        </member>
+        <member name="M:PrivateAPIBridge.UnsafeGridHandle.GetBoundsLocal(UnityEngine.Vector3,UnityEngine.Vector3)">
+            <summary>
+            Returns the local bounds for the groups of cells at the location.
+            </summary>
+            <param name="origin">Origin of the group of cells.</param>
+            <param name="size">Size of the group of cells.</param>
+            <returns>Local bounds of the group of cells at the location.</returns>
+        </member>
+        <member name="M:PrivateAPIBridge.UnsafeGridHandle.CellToLocal(UnityEngine.Vector3Int)">
+            <summary>
+            Converts a cell position to local position space.
+            </summary>
+            <param name="cellPosition">Cell position to convert.</param>
+            <returns>Local position of the cell position.</returns>
+        </member>
+        <member name="M:PrivateAPIBridge.UnsafeGridHandle.LocalToCell(UnityEngine.Vector3)">
+            <summary>
+            Converts a local position to cell position.
+            </summary>
+            <param name="localPosition">Local Position to convert.</param>
+            <returns>Cell position of the local position.</returns>
+        </member>
+        <member name="M:PrivateAPIBridge.UnsafeGridHandle.CellToLocalInterpolated(UnityEngine.Vector3)">
+            <summary>
+            Converts an interpolated cell position in floats to local position space.
+            </summary>
+            <param name="cellPosition">Interpolated cell position to convert.</param>
+            <returns>Local position of the cell position.</returns>
+        </member>
+        <member name="M:PrivateAPIBridge.UnsafeGridHandle.LocalToCellInterpolated(UnityEngine.Vector3)">
+            <summary>
+            Converts a local position to interpolated cell position.
+            </summary>
+            <param name="localPosition">Local Position to convert.</param>
+            <returns>Interpolated cell position of the local position.</returns>
+        </member>
+        <member name="M:PrivateAPIBridge.UnsafeGridHandle.CellToWorld(UnityEngine.Vector3Int)">
+            <summary>
+            Converts a cell position to world position space.
+            </summary>
+            <param name="cellPosition">Cell position to convert.</param>
+            <returns>World position of the cell position.</returns>
+        </member>
+        <member name="M:PrivateAPIBridge.UnsafeGridHandle.WorldToCell(UnityEngine.Vector3)">
+            <summary>
+            Converts a world position to cell position.
+            </summary>
+            <param name="worldPosition">World Position to convert.</param>
+            <returns>Cell position of the world position.</returns>
+        </member>
+        <member name="M:PrivateAPIBridge.UnsafeGridHandle.LocalToWorld(UnityEngine.Vector3)">
+            <summary>
+            Converts a local position to world position.
+            </summary>
+            <param name="localPosition">Local Position to convert.</param>
+            <returns>World position of the local position.</returns>
+        </member>
+        <member name="M:PrivateAPIBridge.UnsafeGridHandle.WorldToLocal(UnityEngine.Vector3)">
+            <summary>
+            Converts a world position to local position.
+            </summary>
+            <param name="worldPosition">World Position to convert.</param>
+            <returns>Local position of the world position.</returns>
+        </member>
+        <member name="M:PrivateAPIBridge.UnsafeGridHandle.GetLayoutCellCenter">
+            <summary>
+            Get the default center coordinate of a cell for the set layout of the Grid.
+            </summary>
+            <returns>Cell Center coordinate.</returns>
+        </member>
+        <member name="M:PrivateAPIBridge.UnsafeGridHandle.GetCellCenterLocal(UnityEngine.Vector3Int)">
+            <summary>
+            Get the logical center coordinate of a grid cell in local space.
+            </summary>
+            <param name="position">Grid cell position.</param>
+            <returns>
+            Center of the cell transformed into local space coordinates.
+            </returns>
+        </member>
+        <member name="M:PrivateAPIBridge.UnsafeGridHandle.GetCellCenterWorld(UnityEngine.Vector3Int)">
+            <summary>
+            Get the logical center coordinate of a grid cell in world space.
+            </summary>
+            <param name="position">Grid cell position.</param>
+            <returns>
+            Center of the cell transformed into world space coordinates.
+            </returns>
+        </member>
+    </members>
+</doc>

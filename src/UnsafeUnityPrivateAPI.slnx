@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="UnsafeUnityEnginePrivateAPI/UnsafeUnityEnginePrivateAPI.csproj" />
+  <Project Path="UnityEngine/UnityEngine.csproj" />
+</Solution>
