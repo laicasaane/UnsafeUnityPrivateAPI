@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.Bindings;
 
-namespace PrivateAPIBridge;
+namespace UnsafeUnityEnginePrivateAPI;
 
 using MarshalledUnityObject = UnityEngine.Object.MarshalledUnityObject;
 using CellSwizzle = GridLayout.CellSwizzle;
