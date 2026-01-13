@@ -1,7 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<LangVersion>10</LangVersion>
-		<TargetFrameworks>netstandard2.1</TargetFrameworks>
 		<ProduceOnlyReferenceAssembly>true</ProduceOnlyReferenceAssembly>
 		<RootNamespace>UnityEngine</RootNamespace>
 	</PropertyGroup>
