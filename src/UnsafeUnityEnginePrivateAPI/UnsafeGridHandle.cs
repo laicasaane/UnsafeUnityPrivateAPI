@@ -26,12 +26,17 @@ public readonly struct UnsafeGridHandle
     }
 
     /// <summary>
+    /// An invalid grid handle.
+    /// </summary>
+    public static UnsafeGridHandle None => default;
+
+    /// <summary>
     /// The size of each cell in the Grid.
     /// </summary>
     public Vector3 cellSize
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        readonly get
+        get
         {
             Grid.get_cellSize_Injected(_ptr, out var ret);
             return ret;
@@ -50,7 +55,7 @@ public readonly struct UnsafeGridHandle
     public Vector3 cellGap
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        readonly get
+        get
         {
             Grid.get_cellGap_Injected(_ptr, out var ret);
             return ret;
@@ -69,7 +74,7 @@ public readonly struct UnsafeGridHandle
     public CellLayout cellLayout
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        readonly get
+        get
         {
             return Grid.get_cellLayout_Injected(_ptr);
         }
@@ -87,7 +92,7 @@ public readonly struct UnsafeGridHandle
     public CellSwizzle cellSwizzle
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        readonly get
+        get
         {
             return Grid.get_cellSwizzle_Injected(_ptr);
         }
