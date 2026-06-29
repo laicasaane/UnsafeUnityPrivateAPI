@@ -4,9 +4,47 @@
         <name>UnsafeUnityEnginePrivateAPI</name>
     </assembly>
     <members>
+        <member name="T:UnsafeUnityEnginePrivateAPI.UnsafeCameraHandle">
+            <summary>
+            A struct providing unsafe access to <see cref="T:UnityEngine.Camera"/>.
+            </summary>
+        </member>
+        <member name="P:UnsafeUnityEnginePrivateAPI.UnsafeCameraHandle.None">
+            <summary>
+            An invalid camera handle.
+            </summary>
+        </member>
+        <member name="P:UnsafeUnityEnginePrivateAPI.UnsafeCameraHandle.aspect">
+            <summary>
+            The aspect ratio (width divided by height).
+            </summary>
+        </member>
+        <member name="P:UnsafeUnityEnginePrivateAPI.UnsafeCameraHandle.orthographicSize">
+            <summary>
+            Camera's half-size when in orthographic mode.
+            </summary>
+        </member>
+        <member name="P:UnsafeUnityEnginePrivateAPI.UnsafeCameraHandle.orthographic">
+            <summary>
+            Is the camera orthographic (true) or perspective (false)?
+            </summary>
+        </member>
+        <member name="M:UnsafeUnityEnginePrivateAPI.UnsafeCameraHandle.CreateFrom(UnityEngine.Camera)">
+            <summary>
+            Creates an <see cref="T:UnsafeUnityEnginePrivateAPI.UnsafeCameraHandle"/> from a <see cref="T:UnityEngine.Camera"/>.
+            </summary>
+            <param name="camera">The camera to create the handle from.</param>
+            <returns>A new <see cref="T:UnsafeUnityEnginePrivateAPI.UnsafeCameraHandle"/>.</returns>
+            <exception cref="T:System.NullReferenceException">Thrown when the camera is null or invalid.</exception>
+        </member>
         <member name="T:UnsafeUnityEnginePrivateAPI.UnsafeGridHandle">
             <summary>
             A struct providing unsafe access to <see cref="T:UnityEngine.Grid"/>.
+            </summary>
+        </member>
+        <member name="P:UnsafeUnityEnginePrivateAPI.UnsafeGridHandle.None">
+            <summary>
+            An invalid grid handle.
             </summary>
         </member>
         <member name="P:UnsafeUnityEnginePrivateAPI.UnsafeGridHandle.cellSize">
