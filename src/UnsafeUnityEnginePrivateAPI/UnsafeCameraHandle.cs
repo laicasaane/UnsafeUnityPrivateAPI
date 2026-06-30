@@ -16,17 +16,28 @@ using MarshalledUnityObject = UnityEngine.Object.MarshalledUnityObject;
 public readonly struct UnsafeCameraHandle
 {
     private readonly IntPtr _ptr;
+    private readonly EntityId _entityId;
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    private UnsafeCameraHandle(IntPtr ptr)
+    private UnsafeCameraHandle(IntPtr ptr, EntityId entityId)
     {
         _ptr = ptr;
+        _entityId = entityId;
     }
 
     /// <summary>
     /// An invalid camera handle.
     /// </summary>
     public static UnsafeCameraHandle None => default;
+
+    public bool isValid
+    {
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        get
+        {
+            return _ptr != (IntPtr)0 && Resources.EntityIdIsValid(_entityId);
+        }
+    }
 
     /// <summary>
     /// The aspect ratio (width divided by height).
@@ -97,6 +108,12 @@ public readonly struct UnsafeCameraHandle
             ThrowHelper.ThrowNullReferenceException(camera);
         }
 
-        return new(ptr);
+        return new(ptr, camera.GetEntityId());
+    }
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public EntityId GetEntityId()
+    {
+        return _entityId;
     }
 }

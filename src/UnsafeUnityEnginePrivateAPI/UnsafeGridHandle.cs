@@ -18,17 +18,28 @@ using CellLayout = GridLayout.CellLayout;
 public readonly struct UnsafeGridHandle
 {
     private readonly IntPtr _ptr;
+    private readonly EntityId _entityId;
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    private UnsafeGridHandle(IntPtr ptr)
+    private UnsafeGridHandle(IntPtr ptr, EntityId entityId)
     {
         _ptr = ptr;
+        _entityId = entityId;
     }
 
     /// <summary>
     /// An invalid grid handle.
     /// </summary>
     public static UnsafeGridHandle None => default;
+
+    public bool isValid
+    {
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        get
+        {
+            return _ptr != (IntPtr)0 && Resources.EntityIdIsValid(_entityId);
+        }
+    }
 
     /// <summary>
     /// The size of each cell in the Grid.
@@ -119,7 +130,13 @@ public readonly struct UnsafeGridHandle
             ThrowHelper.ThrowNullReferenceException(grid);
         }
 
-        return new(ptr);
+        return new(ptr, grid.GetEntityId());
+    }
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public EntityId GetEntityId()
+    {
+        return _entityId;
     }
 
     /// <summary>

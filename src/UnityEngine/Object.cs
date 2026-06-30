@@ -20,4 +20,9 @@ public class Object
         {
         }
     }
+
+    public EntityId GetEntityId()
+    {
+        return default;
+    }
 }
